@@ -1,0 +1,17 @@
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+statsmodels
+nltk
+TextBlob
+spacy
+scikit-learn
+TA-Lib
+pynance
+plotly
+mplfinance
+jupyterlab
+yfinance
+requests
