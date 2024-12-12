@@ -15,3 +15,5 @@ mplfinance
 jupyterlab
 yfinance
 requests
+gdown
+python-dateutil

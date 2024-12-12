@@ -2,3 +2,4 @@ data/
 venv/
 ta-lib/
 *.gz
+cleaned_data/
