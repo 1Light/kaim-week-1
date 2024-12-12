@@ -45,6 +45,7 @@ def load_and_clean_data():
     # Save the cleaned data to a new CSV file
     cleaned_data_path = os.path.join(cleaned_path, 'raw_analyst_ratings.csv')
     data.to_csv(cleaned_data_path, index=False)  # Save without the index column
+    print(data.dtypes)
 
     """
     # Check the data types of the columns
