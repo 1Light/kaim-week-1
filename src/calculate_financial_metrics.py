@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 def calculate_financial_metrics(file_path, output_folder):
     """
-    Calculate financial metrics using pyfolio, numpy, and pandas, create plots, and save as PNG images.
+    Calculate financial metrics, print values to console, create plots, and save as PNG images.
 
     Args:
         file_path (str): Path to the cleaned stock price CSV file.
@@ -49,15 +49,20 @@ def calculate_financial_metrics(file_path, output_folder):
     financial_metrics = {
         'Sharpe Ratio': sharpe_ratio,
         'Sortino Ratio': sortino_ratio,
-        'Volatility': annualized_volatility,
+        'Annualized Volatility': annualized_volatility,
         'Max Drawdown': max_drawdown
     }
+
+    # Print metrics to the console
+    stock_name = os.path.splitext(os.path.basename(file_path))[0]
+    print(f"\nMetrics for {stock_name}:")
+    for metric, value in financial_metrics.items():
+        print(f"{metric}: {value:.4f}")
 
     # Convert metrics to a DataFrame
     metrics_df = pd.DataFrame.from_dict(financial_metrics, orient='index', columns=['Value'])
 
     # Determine the stock name and create a subfolder for the stock
-    stock_name = os.path.splitext(os.path.basename(file_path))[0]
     stock_output_folder = os.path.join(output_folder, stock_name)
     os.makedirs(stock_output_folder, exist_ok=True)
 

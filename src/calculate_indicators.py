@@ -35,6 +35,14 @@ def apply_ta_indicators_and_save_images(file_path, output_folder):
         df['Close'], fastperiod=12, slowperiod=26, signalperiod=9
     )
 
+    # Print relevant values to the console
+    print(f"\nProcessing file: {file_path}")
+    print("\nSample of Calculated Indicators:")
+    print(df[['Close', 'SMA_20', 'EMA_20', 'RSI_14', 'MACD', 'MACD_Signal', 'MACD_Hist']].tail())
+
+    print("\nBasic Statistics for Indicators:")
+    print(df[['SMA_20', 'EMA_20', 'RSI_14', 'MACD', 'MACD_Signal', 'MACD_Hist']].describe())
+
     # Determine the stock name and create a subfolder for the stock
     stock_name = os.path.splitext(os.path.basename(file_path))[0]
     stock_output_folder = os.path.join(output_folder, stock_name)
