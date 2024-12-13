@@ -1,6 +1,7 @@
 numpy
 pandas
 matplotlib
+sklearn
 seaborn
 scipy
 statsmodels
@@ -15,3 +16,7 @@ mplfinance
 jupyterlab
 yfinance
 requests
+gdown
+gensim
+python-dateutil
+vaderSentiment
