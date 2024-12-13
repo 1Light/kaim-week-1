@@ -6,11 +6,11 @@ This repository contains the work for **Kaim Week 1**, focusing on data analysis
 
 ```
 kaim-week-1/
-├── data/                # Contains datasets (stock prices, news headlines, etc.)
-├── notebooks/           # Jupyter notebooks for analysis and development
-├── scripts/             # Python scripts for task automation
-├── requirements.txt     # List of Python dependencies
-└── README.md            # Project documentation
+├── src/                  # Core source code for analysis, models, and utilities
+├── scripts/              # Python scripts for task automation
+├── requirements.txt      # List of Python dependencies
+├── results/              # Analysis reports and documentation
+└── README.md             # Project documentation
 ```
 
 ## Tasks
@@ -31,7 +31,7 @@ kaim-week-1/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/kaim-week-1.git
+   git clone https://github.com/1Light/kaim-week-1.git
    cd kaim-week-1
    ```
 
