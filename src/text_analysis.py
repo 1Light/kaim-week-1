@@ -108,4 +108,4 @@ def perform_topic_modeling(file_path):
 file_path = os.path.join('cleaned_data', 'raw_analyst_ratings', 'raw_analyst_ratings.csv')
 
 # Call the function to perform topic modeling
-perform_topic_modeling(file_path)
+perform_sentiment_analysis(file_path)

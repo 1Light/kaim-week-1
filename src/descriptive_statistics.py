@@ -6,6 +6,16 @@ def generate_headline_length_stats_image(file_path):
     # Load the CSV file into a pandas DataFrame
     df = pd.read_csv(file_path)
 
+    # Check dataset size
+    print(f"Total rows in DataFrame: {df.shape[0]}")
+
+    # Remove null and duplicate rows
+    df = df[df['headline'].notnull()].drop_duplicates()
+
+    # Check for unexpected duplicates or nulls
+    print(f"Duplicate rows after cleanup: {df.duplicated().sum()}")
+    print(f"Null values in 'headline': {df['headline'].isnull().sum()}")
+
     # Step 1: Calculate headline length
     df['headline_length'] = df['headline'].apply(len)
 
@@ -14,12 +24,13 @@ def generate_headline_length_stats_image(file_path):
 
     # Prepare data for tabulation
     statistics = {
-        "Statistic": ['count', 'mean', 'std', 'min', '25%', '50%', '75%', 'max'],
-        "Headline Length": headline_length_stats.values
+        "Statistic": headline_length_stats.index.tolist(),
+        "Headline Length": headline_length_stats.values.tolist()
     }
 
     # Create a DataFrame from the statistics dictionary
     df_stats = pd.DataFrame(statistics)
+    print(df_stats)
 
     # Create the 'results/descriptive_statistics' folder if it doesn't exist
     os.makedirs('results/descriptive_statistics', exist_ok=True)
@@ -35,6 +46,7 @@ def generate_headline_length_stats_image(file_path):
     plt.tight_layout()  # Adjust layout to avoid cutting off labels
     plt.savefig('results/descriptive_statistics/headline_length_stats.png', bbox_inches='tight', dpi=300)
 
+
 def count_articles_per_publisher(file_path):
     # Load the CSV file into a pandas DataFrame
     df = pd.read_csv(file_path)
@@ -44,6 +56,7 @@ def count_articles_per_publisher(file_path):
 
     # Step 2: Get the top 10 publishers with the most articles
     top_10_publishers = publisher_counts.head(10)
+    print(top_10_publishers)
 
     # Step 3: Create a bar plot for the top 10 publisher counts
     fig, ax = plt.subplots(figsize=(10, 6))  # Set the figure size
@@ -132,4 +145,4 @@ def analyze_publication_dates_per_week(file_path):
 file_path = os.path.join('cleaned_data', 'raw_analyst_ratings', 'raw_analyst_ratings.csv')
 
 # Call the function to analyze the publication dates and save the plot
-analyze_publication_dates_per_week(file_path)
+generate_headline_length_stats_image(file_path)
