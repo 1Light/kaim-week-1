@@ -26,6 +26,10 @@ def perform_sentiment_analysis(news_file, output_folder):
     # Perform sentiment analysis on each headline and store the scores
     news_df['sentiment_score'] = news_df['headline'].apply(lambda x: sia.polarity_scores(str(x))['compound'])
 
+    # Print out the sentiment scores for the first few headlines
+    print("\nSentiment analysis results (headline and sentiment score):")
+    print(news_df[['headline', 'sentiment_score']].head())  # Displaying the first few headlines with their sentiment score
+
     # Optional: Visualize sentiment distribution
     plt.figure(figsize=(10, 6))
     news_df['sentiment_score'].hist(bins=20, color='blue', alpha=0.7)
@@ -40,6 +44,10 @@ def perform_sentiment_analysis(news_file, output_folder):
     plt.close()
 
     print(f"Sentiment score distribution plot saved to {plot_file}")
+
+    # Optional: Print some additional stats about sentiment scores
+    print("\nSentiment score statistics:")
+    print(news_df['sentiment_score'].describe())
 
 # Define file and folder paths
 news_file = os.path.join('cleaned_data', 'raw_analyst_ratings', 'raw_analyst_ratings.csv')

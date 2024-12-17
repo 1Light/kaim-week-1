@@ -32,6 +32,10 @@ def normalize_dates(news_file, input_folder_stock, output_folder):
     
     # Calculate sentiment score for each headline
     news_df['sentiment_score'] = news_df['headline'].apply(get_sentiment_score)
+
+    # Print sentiment scores for the first few rows
+    print("\nSentiment analysis results (headline and sentiment score):")
+    print(news_df[['headline', 'sentiment_score']].head())
     
     # List all stock files
     stock_files = [f for f in os.listdir(input_folder_stock) if f.endswith('.csv')]

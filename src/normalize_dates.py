@@ -56,6 +56,10 @@ def normalize_dates(news_file, input_folder_stock, output_folder):
             grouped_counts = aligned_df['period'].value_counts().sort_index()
             x_label = "Month"
 
+        # Print grouped counts (number of news articles per period)
+        print(f"\nNumber of news articles per {x_label} for {stock_symbol}:")
+        print(grouped_counts)
+
         # Plot
         plt.figure(figsize=(10, 6))
         grouped_counts.plot(kind='bar', color='blue', alpha=0.7)
@@ -69,6 +73,8 @@ def normalize_dates(news_file, input_folder_stock, output_folder):
         plot_file = os.path.join(stock_output_folder, f"{stock_symbol}_normalized_dates.png")
         plt.savefig(plot_file, bbox_inches='tight', dpi=300)
         plt.close()
+
+        print(f"Normalized data and plot saved for {stock_symbol}.")
 
         print(f"Normalized data and plot saved for {stock_symbol}.")
 

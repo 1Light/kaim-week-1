@@ -24,8 +24,9 @@ kaim-week-1/
 - Tools: `TA-Lib`, `pynance`, `matplotlib`.
 
 ### Task 3: Correlation Between News and Stock Movement
-- Conduct sentiment analysis on news headlines and correlate sentiment scores with stock price movements.
-- Tools: `nltk`, `TextBlob`, `scipy`.
+- Perform sentiment analysis on news headlines and correlate sentiment scores with stock price movements for six major companies: Apple (AAPL), Amazon (AMZN), Google (GOOG), Meta (META), Microsoft (MSFT), and Tesla (TSLA).
+- Calculate key financial metrics and analyze the correlation between sentiment scores and stock returns, providing insights into how news sentiment affects stock market behavior.
+- Tools: `nltk`, `TextBlob`, `scipy`, `matplotlib`, `pandas`.
 
 ## Installation
 

@@ -33,6 +33,10 @@ def compute_daily_returns(input_folder_stock, output_folder):
         
         # Drop rows with NaN values (which will exist for the first row)
         stock_df.dropna(subset=['Daily_Return'], inplace=True)
+
+        # Print the first few rows of the daily returns for verification
+        print(f"\nDaily returns for {stock_symbol}:")
+        print(stock_df[['Date', 'Close', 'Daily_Return']].head())
         
         # Save the result into the output folder
         stock_output_folder = os.path.join(output_folder, stock_symbol)
