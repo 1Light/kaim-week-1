@@ -71,7 +71,6 @@ kaim-week-1/
   - `pynance`
   - `plotly`
   - `mplfinance`
-  - `jupyterlab`
   - `yfinance`
 
 ## Contribution Guidelines
