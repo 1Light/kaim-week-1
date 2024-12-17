@@ -1,0 +1,95 @@
+[33mcommit 7a092b20152cb90e1b9bcade6d521c07b7b91168[m[33m ([m[1;36mHEAD -> [m[1;32mtask-3[m[33m)[m
+Author: 1Light <redclover1.618@gmail.com>
+Date:   Tue Dec 17 13:18:22 2024 +0300
+
+    perfomed sentiment analysis
+
+[33mcommit 8ca5b63deadb6e35c515189036f433529f1d4113[m
+Author: 1Light <redclover1.618@gmail.com>
+Date:   Tue Dec 17 13:06:18 2024 +0300
+
+    performed sentiment analysis
+
+[33mcommit ffbb18fd25ef85fb3bf4a04f85bf049a5a9bfa67[m[33m ([m[1;31morigin/task-3[m[33m, [m[1;32mmain[m[33m)[m
+Author: 1Light <redclover1.618@gmail.com>
+Date:   Tue Dec 17 12:51:52 2024 +0300
+
+    normalized dates
+
+[33mcommit 0870e42a74d2f52551014982d7c0ee697cfc2490[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: 1Light <redclover1.618@gmail.com>
+Date:   Fri Dec 13 19:33:42 2024 +0300
+
+    updated README.md
+
+[33mcommit bd99632686c32dd2c4f2f8c7910ac93b190a1e74[m
+Merge: 50178ca 9b6c858
+Author: 1Light <122827327+1Light@users.noreply.github.com>
+Date:   Fri Dec 13 19:29:14 2024 +0300
+
+    Merge pull request #2 from 1Light/task-2
+    
+    merging task-2 branch
+
+[33mcommit 9b6c85877298adab0562b0f6cf4c48a5c8769b51[m[33m ([m[1;31morigin/task-2[m[33m, [m[1;32mtask-2[m[33m)[m
+Author: 1Light <redclover1.618@gmail.com>
+Date:   Fri Dec 13 19:26:45 2024 +0300
+
+    updated financial metrics script
+
+[33mcommit 6028206e1c09b5bc61709d7ed28eb582461ab504[m
+Author: 1Light <redclover1.618@gmail.com>
+Date:   Fri Dec 13 15:12:33 2024 +0300
+
+    visualized data
+
+[33mcommit 2206d4f9d9f59c0f66add3082f4303ccd18893e0[m
+Author: 1Light <redclover1.618@gmail.com>
+Date:   Fri Dec 13 14:46:30 2024 +0300
+
+    determined financial metrics
+
+[33mcommit 177eed89a7aa47b5be8bc622bf890990f54f78a9[m
+Author: 1Light <redclover1.618@gmail.com>
+Date:   Fri Dec 13 14:07:20 2024 +0300
+
+    obtained technical indicators
+
+[33mcommit 50178cabcbba3b870c54648d8456fb2853a1e813[m
+Merge: f3b6924 867e545
+Author: 1Light <122827327+1Light@users.noreply.github.com>
+Date:   Fri Dec 13 08:34:47 2024 +0300
+
+    Merge pull request #1 from 1Light/task-1
+    
+    merging task-1 branch
+
+[33mcommit 867e545d420540945a8d1df47d21ddfd3e612865[m
+Author: 1Light <redclover1.618@gmail.com>
+Date:   Fri Dec 13 08:31:48 2024 +0300
+
+    performed time series analysis
+
+[33mcommit 7cff133a48d06a1a15cd27441145a10fe9e7b890[m
+Author: 1Light <redclover1.618@gmail.com>
+Date:   Thu Dec 12 21:30:44 2024 +0300
+
+    performed descriptive_statistics
+
+[33mcommit 33cd5d807d80c40f60ac9bfb74b2f2f6f2db3a9f[m
+Author: 1Light <redclover1.618@gmail.com>
+Date:   Thu Dec 12 20:11:17 2024 +0300
+
+    cleaned data
+
+[33mcommit f3b69241c312c91ceeb30b6d874d8ab34e967679[m
+Author: 1Light <redclover1.618@gmail.com>
+Date:   Thu Dec 12 12:37:13 2024 +0300
+
+    initial commit
+
+[33mcommit 32fceb968e959b35e3f19d67b2d48e61cd69e0b1[m
+Author: 1Light <redclover1.618@gmail.com>
+Date:   Thu Dec 12 00:00:59 2024 +0300
+
+    initial commit
