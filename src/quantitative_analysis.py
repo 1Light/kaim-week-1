@@ -6,7 +6,7 @@ import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import numpy as np
 
-# Download VADER lexicon if not already downloaded
+# Download VADER lexicon
 nltk.download('vader_lexicon')
 
 def apply_ta_indicators_and_save_images(file_path, output_folder, sentiment_data=None):
