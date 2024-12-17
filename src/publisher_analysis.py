@@ -10,8 +10,6 @@ def analyze_publishers(file_path, publisher_column='publisher', email_column=Non
     Args:
         file_path (str): Path to the CSV file containing the data.
         publisher_column (str): Column name containing publisher names.
-        email_column (str, optional): If publishers are email addresses, the column with emails.
-        category_column (str, optional): Column name containing news categories or types.
 
     Returns:
         None
